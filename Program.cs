@@ -10,19 +10,37 @@ namespace Animal_IsAs
     {
         static void Main(string[] args)
         {
-            Animal animal = new Animal();
+            //Animal animal = new Animal();
+            Animal animal = new Cat();
             Cat cat = new Cat();
 
-            //Console.WriteLine(cat is Cat);
-            if (animal is Cat)
+
+            Cat cat2 = animal as Cat; // is able to use projection useing - as
+            cat2.PijMleko();
+
+            if (!(cat2 == null))
             {
+
                 Console.WriteLine("Rzutowanie się powiodło");
             }
             else
             {
-                Cat cat2 = (Cat)animal;
                 Console.WriteLine("Rzutowanie zakończone porażką");
             }
+
+
+            //animal = cat;
+
+            ////Console.WriteLine(cat is Cat);
+            //if (animal is Cat)
+            //{
+            //    Cat cat2 = (Cat)animal;
+            //    Console.WriteLine("Rzutowanie się powiodło");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Rzutowanie zakończone porażką");
+            //}
 
             //animal = new Cat();
 

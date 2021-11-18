@@ -12,10 +12,22 @@ namespace Animal_IsAs
         {
             Animal animal = new Animal();
             Cat cat = new Cat();
-            animal = new Cat();
 
-            cat = (Cat)animal;
-            cat.PijMleko();
+            //Console.WriteLine(cat is Cat);
+            if (animal is Cat)
+            {
+                Console.WriteLine("Rzutowanie się powiodło");
+            }
+            else
+            {
+                Cat cat2 = (Cat)animal;
+                Console.WriteLine("Rzutowanie zakończone porażką");
+            }
+
+            //animal = new Cat();
+
+            //cat = (Cat)animal;
+            //cat.PijMleko();
 
 
 

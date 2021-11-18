@@ -16,11 +16,10 @@ namespace Animal_IsAs
 
 
             Cat cat2 = animal as Cat; // is able to use projection useing - as
-            cat2.PijMleko();
 
             if (!(cat2 == null))
             {
-
+                cat2.PijMleko();
                 Console.WriteLine("Rzutowanie się powiodło");
             }
             else
